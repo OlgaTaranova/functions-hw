@@ -48,16 +48,12 @@
 
 btn.onclick = function showMessage() {
   let loading = document.getElementById('loading');
-  loading.style.top = '0px';
- 
+  let message = document.getElementById('message');
+   
+  loading.style.top = '50px';
   setTimeout(() => {
-    alert('Message'); 
-  }, 5000); 
-   setTimeout(() => {
-    loading.style.top = '1000px'; 
-  }, 5000); 
-  // setTimeout(() => {
-  //   loading.style.top = '1000px'; 
-  //   alert("Message");
-  // }, 5000);  
+    message.style.display = "block";
+    loading.style.top = '1000px';
+  }, 5000);
+  
 };
