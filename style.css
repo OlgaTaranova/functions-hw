@@ -1,4 +1,4 @@
-.loading{
+ #loading{
   position: absolute;
   width: 100vw;
   top: -1000px;
@@ -8,17 +8,21 @@
   text-align: center;
 }
 
-.btn{
+#btn{
   padding: 10px;
   background: #66755d;
   text-transform: uppercase;
   border: none;
   color: white;
 }
-.btn:hover {
+#btn:hover {
   cursor: pointer;
   background: #7d8f72;
 }
-.btn:focus, .btn:visited{
+#btn:focus, #btn:visited{
   outline: none;
+}
+
+#message {
+  display: none;
 }
